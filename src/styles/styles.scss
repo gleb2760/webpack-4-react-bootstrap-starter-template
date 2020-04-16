@@ -40,6 +40,12 @@ a{
       padding: 5px;    
       clear: both;  
   }
+  .row{
+      margin-right: 0px!important;
+  }
+  .header{
+      width: 100%;
+  }
   .header_1{
       margin-top: 25px;
   }
@@ -96,6 +102,7 @@ a{
        width: 100px;
        margin-top: 12px;
        margin-right: 23px;
+       margin-left: 23px;
   }
   
   .butt{
@@ -246,7 +253,7 @@ a{
   .phone{
       float: right;
       margin-top: 2.5em;
-      margin-right: 3px;
+      margin-right: 9px;
       font-weight: bold;
       font-size: 1.5em;
   }
@@ -312,7 +319,7 @@ a{
   .main_10{
     border-left: 2px solid #29ABE2;
     border-bottom:2px solid #29ABE2;
-    line-height: 126px;
+    line-height: 46px;
     width: 23px;
   }
   .main_11{

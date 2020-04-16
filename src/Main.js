@@ -10,9 +10,9 @@ const Main =()=>{
                                 <li>
                                     <div className="round main_2"></div>
                                     <div className="main_3">
-                                        <p className="main_4"> <a href="#">
+                                        <span className="main_4"> <a href="#">
                                             Портфило</a>
-                                        </p>
+                                        </span>
                                     </div>
                                     <div className="round main_5"></div>
                                 </li>
@@ -38,11 +38,15 @@ const Main =()=>{
                                 <li className="main_17">
                                     <div className="round"></div>
                                     <div className="main_10">
-                                        <span className="main_11"> Аг
+                                        <span className="main_11">
                                         </span>
                                     </div>
-                                    <div className="round main_12"></div>
-                                    <div className="round main_13"></div>
+                                    <div className="round main_12">
+                                        <i className=""></i>
+                                    </div>
+                                    <div className="round main_13">
+                                        <i className="fab fa-vk"></i>
+                                    </div>
                                     <div className="main_14"></div>
                                 </li>
                             </ul>
