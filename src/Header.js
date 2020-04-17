@@ -11,13 +11,13 @@ const Header =()=>{
 						</div>
 						<div class="artical row d-flex m-2 right" >
 						<div class="col-10">
-							<button class="btn btn-rounded btn-primary ml-5 mt-2">
+							<button class="btn btn-rounded btn-bl mt-2">
 							заказать проект
 							</button> 	
 							<div class="round round_dop">
 							
 							</div>	
-							<button class="btn btn-rounded btn-primary right call">
+							<button class="btn btn-rounded btn-bl right call">
 							обратный звонок
 							</button> 
 							<h3 class="centered centered_dop">О НАС

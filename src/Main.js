@@ -1,5 +1,14 @@
-import React from 'react';
-import photo from "./image/logo.png";
+import React from 'react'
+import photo from "./image/logo.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from "@fortawesome/free-solid-svg-icons"
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab);
+
+
+
 
 const Main =()=>{
     return(
@@ -45,7 +54,7 @@ const Main =()=>{
                                         <i className=""></i>
                                     </div>
                                     <div className="round main_13">
-                                        <i className="fab fa-vk"></i>
+                                    <FontAwesomeIcon  icon={['fab', 'javascript']}/>
                                     </div>
                                     <div className="main_14"></div>
                                 </li>
@@ -75,7 +84,7 @@ const Main =()=>{
                             </div>
                             <div className="col-8">
                                 <p className="site">Cайт для компании "прометрей"</p>
-                                <button btn-rounded className="btn btn-rounded btn-primary">
+                                <button btn-rounded className="btn btn-rounded btn-bl">
                                     посмотреть
                                 </button> 
                             </div>
