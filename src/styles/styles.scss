@@ -144,7 +144,11 @@ a{
       margin-top: -20px;
       margin-left: 199px;
   }
-  
+  .round_social{
+    position: fixed;
+    bottom: 50px!important;
+    left: 153px;
+    }
   .call{
       margin-top: 7px;
       position: relative;
@@ -202,6 +206,38 @@ a{
       list-style-type: none;margin-left: -3em;
   }
   
+  .main_13 svg{
+    font-size: 3em!important;
+    margin-top: -17px;
+    margin-left: 10px;
+  }
+  .main_14 svg{
+    font-size: 3em!important;
+    margin-top: -20px;
+    margin-left: 100px;
+  }
+  .language{
+    position: fixed;
+    right: 35px;
+    bottom: 35px;
+    background-color: $btn_bl;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    vertical-align: middle;
+    text-align:center;
+
+  }
+  .language p{
+    color:$text_for_bl;
+    margin-top: 7px;
+    margin-bottom: 0px!important;
+  }
+  svg .fk{
+      position: fixed;
+      left: 35px;
+      bottom: 35px;
+  }
   .img_1{
       width: 23px;
       height: 23px;
@@ -322,6 +358,10 @@ a{
     font-weight: bold;padding-bottom: 11px;
   }
   .main_10{
+      position: fixed;
+      bottom:53px;
+      height: 25px;
+     
     border-left: 2px solid #4DB8E6;
     border-bottom:2px solid #4DB8E6;
     line-height: 46px;
@@ -334,10 +374,15 @@ a{
     margin-top:-3px;
   }
   .main_13{
-    margin-top:-4px;  margin-left:23px;
+    position: fixed;
+    bottom: 35px;
+    left:100px;
   }
   .main_14{
-    float: right; margin-right: 60px;margin-top:0px;
+    position: fixed;
+    bottom: 35px;
+    left:70px;
+
   }
   .main_15{
     padding: 15px;

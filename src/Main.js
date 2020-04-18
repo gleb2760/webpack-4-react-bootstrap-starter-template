@@ -1,14 +1,7 @@
 import React from 'react'
 import photo from "./image/logo.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome } from "@fortawesome/free-solid-svg-icons"
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-
-library.add(fab);
-
-
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faInstagram, faFacebook} from '@fortawesome/fontawesome-free-brands';
 
 const Main =()=>{
     return(
@@ -53,10 +46,13 @@ const Main =()=>{
                                     <div className="round main_12">
                                         <i className=""></i>
                                     </div>
-                                    <div className="round main_13">
-                                    <FontAwesomeIcon  icon={['fab', 'javascript']}/>
+                                    <div className="main_13">
+                                    <FontAwesomeIcon className ='' icon={faInstagram} />
                                     </div>
-                                    <div className="main_14"></div>
+                                    <div class="round round_social"></div>
+                                    <div className="main_14">
+                                    <FontAwesomeIcon className ='' icon={faFacebook} />
+                                    </div>
                                 </li>
                             </ul>
                         </nav>													
@@ -86,7 +82,10 @@ const Main =()=>{
                                 <p className="site">Cайт для компании "прометрей"</p>
                                 <button btn-rounded className="btn btn-rounded btn-bl">
                                     посмотреть
-                                </button> 
+                                </button>
+                                <div className="language">
+                                    <p>RU</p>    
+                                </div> 
                             </div>
                         </div>
                     </div>
