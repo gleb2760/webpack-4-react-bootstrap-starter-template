@@ -11,7 +11,7 @@ const Header =()=>{
 						</div>
 						<div class="artical row d-flex m-2 right" >
 						<div class="col-10">
-							<button class="btn btn-rounded btn-bl mt-2">
+							<button data-toggle="modal" data-target="#exampleModal" class="btn btn-rounded btn-bl mt-2">
 							заказать проект
 							</button> 	
 							<div class="round round_dop">
