@@ -3,6 +3,7 @@ import photo from "./image/logo.png"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook} from '@fortawesome/fontawesome-free-brands';
 
+
 const Main =()=>{
     return(
                 <div className="main container-fuild">
@@ -48,10 +49,12 @@ const Main =()=>{
                                     </div>
                                     <div className="main_13">
                                     <FontAwesomeIcon className ='' icon={faInstagram} />
+                                    
                                     </div>
                                     <div class="round round_social"></div>
                                     <div className="main_14">
                                     <FontAwesomeIcon className ='' icon={faFacebook} />
+                                    
                                     </div>
                                 </li>
                             </ul>
@@ -79,9 +82,9 @@ const Main =()=>{
                                         посмотреть
                                     </button>
                                     <div className="language">
-                                        <select class="" id="inlineFormCustomSelect">
-                                            <option value="1">EN</option>
-                                            <option value="2">RU</option>
+                                        <select id="inlineFormCustomSelect">
+                                            <option className="switch_lang" value="1">EN</option>
+                                            <option className="switch_lang" value="2">RU</option>
                                         </select>   
                                     </div> 
 
