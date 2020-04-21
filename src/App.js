@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './Header';
 import Main from './Main';
-import Modal from './ModalOrderProject';
+import ModalOrderProject from './ModalOrderProject';
+import ModalCallPhone from './ModalCallPhone';
 
 
 
@@ -11,7 +12,8 @@ const App = () => {
     <div >
      <Header/>
      <Main/>
-     <Modal/>
+     <ModalOrderProject/>
+     <ModalCallPhone/>
     </div>
   );
 };

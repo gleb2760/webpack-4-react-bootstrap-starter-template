@@ -12,7 +12,7 @@ const Main =()=>{
                                 <li>
                                     <div className="round main_2"></div>
                                     <div className="main_3">
-                                        <span className="main_4"> <a href="#">
+                                        <span className="main_4"> <a className="menu" href="#">
                                             Портфило</a>
                                         </span>
                                     </div>
@@ -22,7 +22,7 @@ const Main =()=>{
                                 <li className="main_6">
                                     <div className="round"></div>
                                     <div className="main_7">
-                                        <span className="main_8"><a href="#">Контакты</a>
+                                        <span className="main_8"><a className="menu" href="#">Контакты</a>
                                         </span>
                                     </div>
                                     <div className="round"></div>
@@ -31,7 +31,7 @@ const Main =()=>{
                                 <li className="main_16">
                                     <div className="round"></div>
                                     <div className="main_7" >
-                                        <span className="main_9"><a href="#">Агенство</a>
+                                        <span className="main_9"><a className="menu" href="#">Агенство</a>
                                         </span>
                                     </div>
                                     <div className="round"></div>
@@ -65,27 +65,27 @@ const Main =()=>{
                         Описание Описание Описание Описание
                         Описание Описание Описание Описание
                         Описание Описание Описание Описание
-                        Описание Описание Описание Описание
-                        Описание Описание Описание Описание
-                        Описание Описание Описание Описание
-                        Описание Описание Описание Описание
-                        Описание Описание Описание Описание
-                        Описание Описание Описание Описание		
-                        Описание
-                        </p>				
-                        <h3 className="main_15">Крайний проект</h3>				
-                        <div className="row ">
-                            <div className="col-4">
-                                <img className="photo" src={photo} alt="picture"/>
-                            </div>
-                            <div className="col-8">
-                                <p className="site">Cайт для компании "прометрей"</p>
-                                <button btn-rounded className="btn btn-rounded btn-bl">
-                                    посмотреть
-                                </button>
-                                <div className="language">
-                                    <p>RU</p>    
-                                </div> 
+                       
+                        </p>
+                        <div className="project">				
+                            <h3 className="main_15">Крайний проект</h3>				
+                            <div className="row ">
+                                <div className="col-4">
+                                    <img className="photo" src={photo} alt="picture"/>
+                                </div>
+                                <div className="col-8">
+                                    <p className="site">Cайт для компании "прометрей"</p>
+                                    <button btn-rounded className="btn btn-rounded btn-bl">
+                                        посмотреть
+                                    </button>
+                                    <div className="language">
+                                        <select class="" id="inlineFormCustomSelect">
+                                            <option value="1">EN</option>
+                                            <option value="2">RU</option>
+                                        </select>   
+                                    </div> 
+
+                                </div>
                             </div>
                         </div>
                     </div>
