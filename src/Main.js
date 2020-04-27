@@ -10,7 +10,7 @@ const Main =()=>{
                     <div className="row ml-3 mr-3 main_1">
                         <nav>	
                             <ul className="aside aside_dop">
-                                <li>
+                                <li className="nmmn">
                                     <div className="round main_2"></div>
                                     <div className="main_3">
                                         <span className="main_4"> <a className="menu" href="#">
@@ -59,17 +59,17 @@ const Main =()=>{
                                 </li>
                             </ul>
                         </nav>													
-                <div className="row">
+                <div className="row d-flex m-2 right">
+                <div className="col-11">
                     <div className="discription_right" > 
-                    <p>
-                        Описание Описание Описание Описание
-                        Описание Описание Описание Описание
-                        Описание Описание Описание Описание
-                        Описание Описание Описание Описание
-                        Описание Описание Описание Описание
-                        Описание Описание Описание Описание
-                       
-                        </p>
+                            <p>
+                            Описание Описание Описание Описание
+                            Описание Описание Описание Описание
+                            Описание Описание Описание Описание
+                            Описание Описание Описание Описание
+                            Описание Описание Описание Описание
+                            Описание Описание Описание Описание
+                            </p>
                         <div className="project">				
                             <h3 className="main_15">Крайний проект</h3>				
                             <div className="row ">
@@ -85,15 +85,19 @@ const Main =()=>{
                                         <select id="inlineFormCustomSelect">
                                             <option className="switch_lang" value="1">EN</option>
                                             <option className="switch_lang" value="2">RU</option>
-                                        </select>   
+                                        </select>  
+
                                     </div> 
 
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="text3 phone">
-                                    х(ххх)хххх
+                    </div>
+                    <div className="col-1 cc">
+                        <div class="text3 phone">
+                                        х(ххх)хххх
+                        </div>
                     </div>
                 </div>
             </div>
