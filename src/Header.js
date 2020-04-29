@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from "./image/logo.png";
+import { withNamespaces } from 'react-i18next';
 
-const Header =()=>{
+const Header =({t})=>{
 	return (
 			<div className="header">
 				<div class="container-fuild">
@@ -12,19 +13,18 @@ const Header =()=>{
 						<div class="artical row d-flex m-2 right" >
 						<div class="col-10">
 							<button data-toggle="modal" data-target="#exampleModal" class="btn btn-rounded btn-bl mt-2">
-								заказать проект
+								{t('OrderProject')}
 							</button> 	
 							<div class="round round_dop">
 							
 							</div>	
 							<button data-toggle="modal" data-target="#exampleModal1" class="btn btn-rounded btn-bl right call">
-								обратный звонок
+								{t('ButtonCall')}
 							</button> 
-							<h3 class="centered centered_dop">О НАС
+							<h3 class="centered centered_dop">{t('About')}
 							</h3>
 							<p class="discription_right_first">
-							Описание Описание Описание Описание
-							Описание Описание Описание Описание
+							{t('discription1')}
 							</p>
 						</div>
 						<div class="col-2 header_1">
@@ -49,4 +49,4 @@ const Header =()=>{
 	);
 }
 
-export default Header;
+export default withNamespaces()(Header);

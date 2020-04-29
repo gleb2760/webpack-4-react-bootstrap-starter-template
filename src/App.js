@@ -3,11 +3,9 @@ import Header from './Header';
 import Main from './Main';
 import ModalOrderProject from './ModalOrderProject';
 import ModalCallPhone from './ModalCallPhone';
-import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
-
-function App () {
-  const { t } = useTranslation();
+import { withNamespaces } from 'react-i18next';
+function App ({t}) {
 
   function handleClick(language) {
     i18next.changeLanguage(language)
@@ -24,7 +22,9 @@ function App () {
           <button onClick={()=>handleClick('chi')} >
             Chinese
          </button>
-         <h3>{t('Thanks.1')}</h3>  <h3>{t('Why.1')}</h3> 
+         <button onClick={()=>handleClick('ru')} >
+            Русский
+         </button>
          </div>
      <Header/>
      <Main/>
@@ -33,5 +33,5 @@ function App () {
     </div>
   );
 };
-export default App;
+export default withNamespaces()(App);
 
