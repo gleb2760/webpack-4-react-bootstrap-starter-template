@@ -1,57 +1,38 @@
-import i18n from 'i18next';
-import Backend from 'i18next-xhr-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import { initReactI18next } from 'react-i18next';
-import en from './locales/en/translation.json'
-import chi from './locales/chi/translation.json'
-import ko from './locales/ko/translation.json'
+import i18n from "i18next";
+import { reactI18nextModule } from "react-i18next";
 
-const fallbackLng = [en];
-const availableLanguages = [en, chi, ko];
+import translationEN from './locales/en.json';
+import translationChi from './locales/chi.json';
+import translationKo from './locales/ko.json';
+import translationRu from './locales/ru.json';
 
-
-const options = {
-  // order and from where user language should be detected
-  order: [ 'navigator', 'htmlTag', 'path', 'subdomain'],
-
-  // keys or params to lookup language from
-  lookupQuerystring: 'lng',
-  lookupCookie: 'i18next',
-  lookupLocalStorage: 'i18nextLng',
-  lookupFromPathIndex: 0,
-  lookupFromSubdomainIndex: 0,
-
-  // cache user language on
-  caches: ['localStorage', 'cookie'],
-  excludeCacheFor: ['cimode'], // languages to not persist (cookie, localStorage)
-
-  // optional expire and domain for set cookie
-  cookieMinutes: 10,
-  cookieDomain: 'myDomain',
-
-  // optional htmlTag with lang attribute, the default is:
-  htmlTag: document.documentElement,
-
-  // only detect languages that are in the whitelist
-  checkWhitelist: true
-}
+// the translations
+const resources = {
+  en: {
+    translation: translationEN
+  },
+ chi: {
+    translation: translationChi
+  },
+  ko: {
+    translation: translationKo
+  },
+  ru: {
+    translation: translationRu
+  }
+};
 
 i18n
-  .use(Backend) // load translation using xhr -> see /public/locales. We will add locales in the next step
-
-  .use(LanguageDetector) // detect user language
-
-  .use(initReactI18next) // pass the i18n instance to react-i18next.
-
+  .use(reactI18nextModule) // passes i18n down to react-i18next
   .init({
-    fallbackLng, // if user computer language is not on the list of available languages, than we will be using the fallback language specified earlier
-    debug: true,
-    whitelist: availableLanguages,
-    detection: options,
+    resources,
+    lng: "en",
+
+    keySeparator: false, // we do not use keys in form messages.welcome
 
     interpolation: {
-      escapeValue: false
-    },
+      escapeValue: false // react already safes from xss
+    }
   });
 
 export default i18n;
